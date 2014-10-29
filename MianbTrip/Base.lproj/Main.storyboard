@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jE8-gP-1A0">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ri1-FG-uZE">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="44"/>
+                                        <state key="normal" backgroundImage="root_tabbar_recommend 2.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="recommendBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vzt-q1-sdL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJo-eS-n8r">
+                                        <rect key="frame" x="64" y="0.0" width="64" height="44"/>
+                                        <state key="normal" backgroundImage="root_tabbar_dest 2.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="destnationBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P4v-ak-63I"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5W1-OU-LrH">
+                                        <rect key="frame" x="128" y="0.0" width="64" height="44"/>
+                                        <state key="normal" backgroundImage="root_tabbar_addtrip 2.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fVE-4w-smT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dk4-OH-4UA">
+                                        <rect key="frame" x="192" y="0.0" width="64" height="44"/>
+                                        <state key="normal" backgroundImage="root_tabbar_sale 2.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saleBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e4h-zQ-7LK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Upx-Wb-B9P">
+                                        <rect key="frame" x="256" y="0.0" width="64" height="44"/>
+                                        <state key="normal" backgroundImage="root_tabbar_me 2.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="meBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PcN-nB-tyn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="5W1-OU-LrH" firstAttribute="top" secondItem="jE8-gP-1A0" secondAttribute="top" id="0eR-MY-PLA"/>
+                                    <constraint firstItem="dk4-OH-4UA" firstAttribute="leading" secondItem="5W1-OU-LrH" secondAttribute="trailing" id="4F4-Gh-8fy"/>
+                                    <constraint firstItem="5W1-OU-LrH" firstAttribute="width" secondItem="Ri1-FG-uZE" secondAttribute="width" id="5RQ-kS-OMJ"/>
+                                    <constraint firstAttribute="height" constant="44" id="5zC-sa-SBa"/>
+                                    <constraint firstItem="Ri1-FG-uZE" firstAttribute="top" secondItem="jE8-gP-1A0" secondAttribute="top" id="6Dh-pS-AMN"/>
+                                    <constraint firstItem="dk4-OH-4UA" firstAttribute="top" secondItem="jE8-gP-1A0" secondAttribute="top" id="8Bz-mt-wjP"/>
+                                    <constraint firstItem="5W1-OU-LrH" firstAttribute="width" secondItem="Upx-Wb-B9P" secondAttribute="width" id="DlU-4S-UIp"/>
+                                    <constraint firstItem="DJo-eS-n8r" firstAttribute="top" secondItem="jE8-gP-1A0" secondAttribute="top" id="G3O-BZ-DEW"/>
+                                    <constraint firstItem="5W1-OU-LrH" firstAttribute="leading" secondItem="DJo-eS-n8r" secondAttribute="trailing" id="GCb-Jk-iXk"/>
+                                    <constraint firstAttribute="bottom" secondItem="5W1-OU-LrH" secondAttribute="bottom" id="GFJ-dD-eWb"/>
+                                    <constraint firstAttribute="bottom" secondItem="Upx-Wb-B9P" secondAttribute="bottom" id="Gmk-Mu-r61"/>
+                                    <constraint firstAttribute="trailing" secondItem="Upx-Wb-B9P" secondAttribute="trailing" id="NY0-op-Ny7"/>
+                                    <constraint firstAttribute="bottom" secondItem="DJo-eS-n8r" secondAttribute="bottom" id="NuH-jI-RGB"/>
+                                    <constraint firstItem="5W1-OU-LrH" firstAttribute="width" secondItem="DJo-eS-n8r" secondAttribute="width" id="Ov4-oI-EIX"/>
+                                    <constraint firstItem="DJo-eS-n8r" firstAttribute="leading" secondItem="Ri1-FG-uZE" secondAttribute="trailing" id="PMB-E3-8Pj"/>
+                                    <constraint firstAttribute="height" constant="44" id="Pqu-aQ-ItH"/>
+                                    <constraint firstAttribute="bottom" secondItem="dk4-OH-4UA" secondAttribute="bottom" id="QQk-LX-eGi"/>
+                                    <constraint firstItem="Upx-Wb-B9P" firstAttribute="leading" secondItem="dk4-OH-4UA" secondAttribute="trailing" id="S0P-ZN-2Wq"/>
+                                    <constraint firstItem="5W1-OU-LrH" firstAttribute="width" secondItem="dk4-OH-4UA" secondAttribute="width" id="nVO-rv-685"/>
+                                    <constraint firstItem="Upx-Wb-B9P" firstAttribute="top" secondItem="jE8-gP-1A0" secondAttribute="top" id="s0m-rg-rHo"/>
+                                    <constraint firstItem="Ri1-FG-uZE" firstAttribute="leading" secondItem="jE8-gP-1A0" secondAttribute="leading" id="xiz-iX-3LO"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ri1-FG-uZE" secondAttribute="bottom" id="y3q-NV-RrA"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5zC-sa-SBa"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MMj-hb-0De">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="推荐" id="K2d-NP-w6y"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jE8-gP-1A0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="9VJ-0M-ppQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jE8-gP-1A0" secondAttribute="bottom" id="Are-I3-Ajj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jE8-gP-1A0" secondAttribute="trailing" constant="-16" id="C0y-4R-qS1"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="213" y="-188"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7F9-XK-4om">
+            <objects>
+                <viewController id="Fbm-Y7-iNi" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ese-pq-aFA"/>
+                        <viewControllerLayoutGuide type="bottom" id="QC8-2S-zSN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vrK-F6-He3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ekQ-KS-BTi">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="F5a-Xk-EN1"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ekQ-KS-BTi" firstAttribute="top" secondItem="ese-pq-aFA" secondAttribute="bottom" constant="2" id="3Lw-wd-zuT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ekQ-KS-BTi" secondAttribute="trailing" constant="-16" id="WAt-eG-HCs"/>
+                            <constraint firstItem="ekQ-KS-BTi" firstAttribute="top" secondItem="ese-pq-aFA" secondAttribute="bottom" id="WtW-2K-vHg"/>
+                            <constraint firstItem="ekQ-KS-BTi" firstAttribute="leading" secondItem="vrK-F6-He3" secondAttribute="leadingMargin" constant="-16" id="mhC-Xw-Qag"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3Lw-wd-zuT"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="pPi-aS-bhc">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-10"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CUH-b2-iYZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="856" y="613"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wNW-Vb-gL2">
+            <objects>
+                <viewController id="2qz-qb-XIi" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="711-eQ-lJY"/>
+                        <viewControllerLayoutGuide type="bottom" id="VQB-ST-Y23"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="olK-ls-YcJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="za6-rI-YjG">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="R6D-2x-8pe"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="za6-rI-YjG" secondAttribute="trailing" constant="-16" id="FUV-jy-qXI"/>
+                            <constraint firstItem="za6-rI-YjG" firstAttribute="leading" secondItem="olK-ls-YcJ" secondAttribute="leadingMargin" constant="-16" id="LgP-gk-Irt"/>
+                            <constraint firstItem="za6-rI-YjG" firstAttribute="top" secondItem="711-eQ-lJY" secondAttribute="bottom" id="q05-mi-5Hh"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="xL7-LT-svC">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-10"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OvS-Yg-Uzg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="856" y="1265"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4dk-iK-VYP">
+            <objects>
+                <viewController id="8Bu-BV-AWv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2UV-cA-YiT"/>
+                        <viewControllerLayoutGuide type="bottom" id="XD7-b0-kfD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qwJ-AW-LwM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xip-wb-TvL">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="4My-2d-w5o"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="xip-wb-TvL" secondAttribute="trailing" constant="-16" id="AHA-CT-08u"/>
+                            <constraint firstItem="xip-wb-TvL" firstAttribute="leading" secondItem="qwJ-AW-LwM" secondAttribute="leadingMargin" constant="-16" id="Ryj-Cv-Zyd"/>
+                            <constraint firstItem="xip-wb-TvL" firstAttribute="top" secondItem="2UV-cA-YiT" secondAttribute="bottom" id="gLl-bV-98p"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="BIy-mH-3eN">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-10"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i9X-bG-Mnr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="856" y="1963"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="v62-nZ-cMF">
+            <objects>
+                <viewController id="CrQ-F2-sr7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qwg-dd-fCc"/>
+                        <viewControllerLayoutGuide type="bottom" id="U7U-lY-xdC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aUM-AS-YNL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lhl-Ik-2dY">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="Cat-Xr-1az"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lhl-Ik-2dY" firstAttribute="top" secondItem="Qwg-dd-fCc" secondAttribute="bottom" id="9as-vn-gJa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lhl-Ik-2dY" secondAttribute="trailing" constant="-16" id="GFE-Oz-Z7A"/>
+                            <constraint firstItem="Lhl-Ik-2dY" firstAttribute="leading" secondItem="aUM-AS-YNL" secondAttribute="leadingMargin" constant="-16" id="XCT-ZU-SYS"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="wYd-lb-uR3">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-10"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o0C-te-pdi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="856" y="2646"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yUm-dz-4xC">
+            <objects>
+                <viewController id="0o3-Tm-M0f" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zKq-Ka-CrK"/>
+                        <viewControllerLayoutGuide type="bottom" id="UsW-kT-qJ3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1KI-pG-wkL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sNj-xx-4ZG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="lQd-jX-z1x"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sNj-xx-4ZG" firstAttribute="leading" secondItem="1KI-pG-wkL" secondAttribute="leadingMargin" constant="-16" id="27P-mB-pge"/>
+                            <constraint firstItem="sNj-xx-4ZG" firstAttribute="top" secondItem="1KI-pG-wkL" secondAttribute="topMargin" id="Lwk-Qj-Wig"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sNj-xx-4ZG" secondAttribute="trailing" constant="-16" id="WVb-XU-djC"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="l6X-tm-wZv">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-10"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xrR-Q7-Nsc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="856" y="-23"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="orL-A5-pIv">
+            <objects>
+                <tabBarController id="svI-Nt-cvj" customClass="ViewController" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="wqR-FL-xmz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="0o3-Tm-M0f" kind="relationship" relationship="viewControllers" id="zg7-Qz-bMv"/>
+                        <segue destination="Fbm-Y7-iNi" kind="relationship" relationship="viewControllers" id="YcX-Zc-aga"/>
+                        <segue destination="2qz-qb-XIi" kind="relationship" relationship="viewControllers" id="ROh-1H-20u"/>
+                        <segue destination="8Bu-BV-AWv" kind="relationship" relationship="viewControllers" id="xxF-cT-Gbq"/>
+                        <segue destination="CrQ-F2-sr7" kind="relationship" relationship="viewControllers" id="fTt-6r-PBK"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q6V-AL-wEL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="1265"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="root_tabbar_addtrip 2.png" width="64" height="49"/>
+        <image name="root_tabbar_dest 2.png" width="64" height="49"/>
+        <image name="root_tabbar_me 2.png" width="64" height="49"/>
+        <image name="root_tabbar_recommend 2.png" width="64" height="49"/>
+        <image name="root_tabbar_sale 2.png" width="64" height="49"/>
+    </resources>
+</document>
